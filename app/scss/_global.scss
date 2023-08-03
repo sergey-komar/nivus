@@ -5,8 +5,11 @@ body {
 	flex-direction: column;/*sticky footer*/
 	margin: 0;
 	scroll-behavior: smooth;
-	font-family: '';
+	font-family: 'Gilroy';
 	font-weight: 400;
+	font-size: 16px;
+	line-height: normal;
+	color: $grey;
  }
 html{
 	font-size: 10px;
@@ -22,8 +25,52 @@ button{
 	cursor: pointer;
 }
 .container{
-	max-width: 137rem;
+	max-width: 143rem;
 	margin: 0 auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+.title{
+	font-size: 3.6rem;
+    font-weight: 800;
+    color: $red;
+}
+.subtitle{
+	font-size: 2rem;
+    font-weight: 500;
+    color: $grey;
+}
+.button{
+	color: #fff;
+	background-color: $red;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 600;
+	border: none;
+}
+.home__box{
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+.home__link{
+	margin-right: 4rem;
+    position: relative;
+    font-weight: 500;
+    color: $red;
+}
+.home__link::after{
+	position: absolute;
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    background: url('../images/icon/arrows-link.svg') no-repeat;
+    top: 3px;
+    right: -60px;
+}
+.about-tabs__title{
+	margin-bottom: 1rem;
+	font-size: 3.2rem;
+	font-weight: 800;
+	color: $seriy;
 }

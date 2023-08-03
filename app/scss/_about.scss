@@ -1,0 +1,124 @@
+//ABOUT-TABS
+.about-tabs__item {
+    margin-bottom: 10rem;
+    display: flex;
+    column-gap: 2.5rem;
+}
+.about-tabs__item-btn {
+    padding: 1rem 2.5rem;
+    width: 14rem;
+    color: $red;
+    background-color: transparent;
+    font-weight: 600;
+    border: 1px solid $red;
+    border-radius: 50px;
+}
+.tabs-active{
+    background-color: $red;
+    color: #fff;
+}
+.about-page__title{
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: $red;
+}
+.about-slider{
+    margin-bottom: 10rem;
+}
+.about__page-subtitle{
+    margin-bottom: 2.5rem;
+}
+.about-slider__item {
+    width: 33rem;
+     margin-left: 1rem;
+}
+.about-slider__info {
+    transform: translateY(-9rem);
+    text-align: center;
+}
+.about-slider__info-title {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.about-slider__info-subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+
+
+
+//VACANCIES
+.vacancies{
+    padding-bottom: 10rem;
+}
+.vacancies-block {
+    padding: 3rem 8rem;
+    border-radius: 25px;
+    background: #F6F7FB;
+}
+.vacancies-box {
+    display: flex;
+    justify-content: space-between;
+}
+.vacancies-box__item {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.vacancies-box__item-name{
+    padding-right: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+}
+.vacancies-box__item-name::placeholder {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #000;
+}
+.vacancies-box__item-input {
+    margin-top: 1rem;
+    padding-right: 1rem;
+    display: block;
+    border: none;
+}
+.vacancies-box__item-input::placeholder{
+    font-size: 2.4rem;
+    color:#2F80ED;
+}
+.vacancies-block__text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 95rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $grey;
+}
+.vacancies-block__btn {
+    width: 20rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
