@@ -36,8 +36,11 @@
     top: 0;
 }
 .menu__list {
-    margin-left: 8rem;
+    margin-left: 4rem;
     display: flex;
+}
+.menu__list-item{
+    list-style: none;
 }
 .menu__list-item + .menu__list-item{
     margin-left: 3rem;

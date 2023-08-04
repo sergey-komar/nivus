@@ -80,15 +80,17 @@
     color: $seriy;
 }
 .about-block__video {
-    margin-left: 7.4rem;
     position: relative;
 }
-.about-block__video::before{
+.video{
+    position: relative;
+    margin-left: 7rem;
+}
+.video__link{
     position: absolute;
     content: '';
     width: 11rem;
     height: 11rem;
-    background: url('../images/home/play.png') no-repeat;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -165,4 +167,10 @@
     border-radius: 1rem;
     border: none;
     color: #fff;
+}
+.contact__title{
+    margin-bottom: 2.5rem;
+}
+.contact__subtitle{
+    margin-bottom: 5rem;
 }

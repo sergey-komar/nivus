@@ -1,3 +1,7 @@
+.slick-dots li{
+    list-style: none;
+}
+
 //STOCK
 .stock{
     padding-top: 5rem;
@@ -60,6 +64,10 @@
     background: url('../images/icon/offer.svg') no-repeat;
     right: 15px;
     top: 5px;
+}
+.offer-slider__item-img img{
+    object-fit: cover;
+    border-radius: 2rem;
 }
 
 
@@ -167,6 +175,26 @@
     opacity: 1;
     width: 1.5rem;
     border-radius: 40%;
+}
+
+
+
+//GALLERY
+.gallery-slider .offer-slider__item {
+    margin-left: 0;
+}
+.gallery-slider.offer{
+    padding-top: 5rem;
+}
+.gallery__title,
+.gallery__subtitle{
+  margin-left: 2rem;
+}
+.gallery__title-slider{
+    margin-bottom: 2.6rem;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: $seriy;
 }
 
 

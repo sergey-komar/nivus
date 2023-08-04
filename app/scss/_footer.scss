@@ -1,0 +1,96 @@
+.footer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: $seriy;
+}
+.footer__inner{
+    color: #fff;
+}
+.footer-top{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.footer__menu {
+    display: flex;
+}
+
+.footer__menu-item {
+    list-style: none;
+}
+.footer__menu-item + .footer__menu-item{
+    margin-left: 4rem;
+}
+.footer__menu-link {
+    font-weight: 600;
+}
+.footer-top__inner{
+    display: flex;
+    margin-left: auto;
+    column-gap: 8rem;
+}
+.footer-top__phone-link,
+.footer-top__email-link{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.footer-top__phone-link--one,
+.footer-top__email-link--one{
+    position: relative;
+    display: block;
+}
+.footer-top__phone-link--one::before,
+.footer-top__email-link--one::before{
+    position: absolute;
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    top: -3px;
+    left: -30px;
+}
+.footer-top__phone-link--one::before{
+    background: url('../images/icon/Calling.svg') no-repeat;
+}
+.footer-top__email-link--one::before{
+    background: url('../images/icon/Message.svg') no-repeat;
+}
+.footer-center {
+    padding-bottom: 3.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+}
+.footer-center__img {
+    display: flex;
+}
+.footer-center__img-link {
+    margin-left: 2rem;
+}
+.footer-center__address a{
+    margin-bottom: 1.6rem;
+    display: block;
+    font-weight: 600;
+}
+.footer-center__address-icon{
+    position: relative;
+}
+.footer-center__address-icon::before{
+    position: absolute;
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    background: url('../images/icon/adress.svg') no-repeat;
+    left: -30px;
+    top: -2px;
+}
+.footer__bottom {
+    margin-top: 4.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.footer__bottom-social {
+    display: flex;
+    column-gap: 1.5rem;
+}
