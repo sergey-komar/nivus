@@ -16,6 +16,12 @@
     .stock-slider__item-title::before{
         display: none;
     }
+    .map{
+        width: 60rem;
+    }
+    .contact-block__info{
+        margin-left: 2rem;
+    }
 }
 
 
@@ -35,6 +41,12 @@
     }
     .about-block{
         justify-content: space-between;
+    }
+    .map{
+        width: 55rem;
+    }
+    .footer__menu-item + .footer__menu-item{
+        margin-left: 1rem;
     }
    
 }
@@ -66,6 +78,46 @@
         width: 30rem;
         height: 32rem;
     }
+
+    .about-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-block{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-block__info{
+        margin-left: 0;
+    }
+    .contact-block__info-title,
+    .contact-block__info-subtitle{
+        display: none;
+    }
+    .contact-block__info-title--mobile,
+    .contact-block__info-subtitle--mobile{
+        display:block;
+        margin-bottom: 1rem;
+    }
+    .contact-block__button{
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+    }
+    .footer__menu{
+        display: block;
+    }
+    .footer__menu-item + .footer__menu-item{
+        margin-left: 0;
+    }
+    .footer__menu-item{
+        margin-bottom: 2rem;
+    }
+    .home__link::after {
+        right: -40px;
+    }
 }
 
 
@@ -85,6 +137,14 @@
    
 }
 
+@media(max-width: 780px){
+    .footer-center{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+}
+
 @media(max-width: 550px){
     .advantages-block__item{
         max-width: 25rem;
@@ -93,7 +153,9 @@
     .stock-box__title,
     .offer-box__title,
     .confidence-box__title,
-    .employees-box__title{
+    .employees-box__title,
+    .about-box__title,
+    .contact-block__info-title--mobile{
         font-size: 24px;
         position: relative;
         width: 100%;
@@ -101,20 +163,24 @@
     .advantages__subtitle{
         font-size: 18px;
     }
-    .advantages__text{
+    .advantages__text,
+    .about-block__text{
         font-size: 16px;
         text-align: center;
     }
     .stock-box__subtitle,
     .offer-box__subtitle,
     .confidence-box__subtitle,
-    .employees-box__subtitle{
+    .employees-box__subtitle,
+    .about__subtitle,
+    .contact-block__info-subtitle--mobile{
         font-size: 16px;
     }
     .stock-box__link,
     .offer-box__link,
     .confidence-box__link,
-    .employees-box__link{
+    .employees-box__link,
+    .about-box__link{
         display: none;
     }
     .stock .slick-dots{
@@ -124,7 +190,8 @@
     .stock-box__title::after,
     .offer-box__title::after,
     .confidence-box__title::after,
-    .employees-box__title::after{
+    .employees-box__title::after,
+    .about-box__title::after{
         position: absolute;
         content: '';
         width: 3rem;
@@ -176,5 +243,58 @@
     .employees-slider__info-subtitle{
         font-size: 12px;
         padding-left: 1rem;
+    }
+    .video{
+        margin-left: 0;
+    }
+    .map{
+        width: 100%;
+        height: 35rem;
+    }
+    .contact{
+        padding-top: 5rem;
+    }
+    .contact-block__info-adrress{
+        font-weight: 700;
+    }
+    .contact-block__data-text,
+    .contact-block__work,
+    .contact-block__time{
+        font-size: 16px;
+    }
+    .contact-block__info{
+        width: 100%;
+    }
+    .video__link{
+        width: 7rem;
+        height: 7rem;
+    }
+    .footer__menu{
+        display: none;
+    }
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .footer-top__inner{
+        margin-left: 0;
+        column-gap: 3rem;
+        justify-content: center;
+    }
+    .footer-top{
+        display: block;
+    }
+    .footer-center__address,
+    .footer-top__phone-link{
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer-top__phone-link--one::before,
+    .footer-center__address-icon::before{
+        left: -20px;
+    }
+    .about-block__text{
+        text-align: left;
     }
 }
