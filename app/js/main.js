@@ -39,12 +39,41 @@ $(function () {
     });
 
     $('.about-slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        variableWidth: true
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
+        responsive: [
+          {
+              breakpoint: 1450,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // variableWidth: false,
+              }
+            },
+            {
+              breakpoint: 950,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 550,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                infinite: false
+              }
+            },
+        ]
     })
+
+
 
     $('.confidence-slider').slick({
         slidesToShow: 2,
@@ -153,8 +182,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const tabsItem = document.querySelector('.about-tabs__item'),
         tabsBtn = document.querySelectorAll('.about-tabs__item-btn'),
-       tabsContent = document.querySelectorAll('.about-tabs__content'),
-       click = document.querySelectorAll('.slick-track');
+       tabsContent = document.querySelectorAll('.about-tabs__content');
+       
 
 function tabsHide() {
     tabsContent.forEach(item => {
@@ -172,7 +201,9 @@ function tabsShow(i) {
     tabsBtn[i].classList.add('tabs-active');
 }
 
-tabsItem.addEventListener('click', (e) => {
+
+if(tabsItem){
+  tabsItem.addEventListener('click', (e) => {
     const target = e.target;
         if(target && target.classList.contains('about-tabs__item-btn')){
             tabsBtn.forEach((item, i) => {
@@ -182,11 +213,27 @@ tabsItem.addEventListener('click', (e) => {
                 }
             })
         }
-})
+});
+}
 
 
-tabsHide();
-tabsShow(0);
+if(tabsItem && tabsBtn && tabsContent){
+  tabsHide();
+  tabsShow(0);
+}
+
+
+
+
+ const menu = document.querySelector('.test');
+ const mobile = document.querySelector('.nav-icon');
+ const mobBtn = document.querySelector('.mobile');
+
+ mobile.addEventListener('click', function(){
+     this.classList.toggle('nav-icon--active');
+     menu.classList.toggle('nav--active');
+     mobBtn.classList.toggle('visota')
+ });
 
 
 
