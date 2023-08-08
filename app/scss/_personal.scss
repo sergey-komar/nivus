@@ -1,0 +1,50 @@
+.personal__title {
+    padding-top: 5rem;
+    margin-bottom: .5rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #C63235;
+}
+.personal-tabs__item {
+    display: flex;
+    column-gap: 2.5rem;
+}
+.personal-tabs__item-btn {
+    width: 10rem;
+    height: 4rem;
+    display: block;
+    color: #C63235;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #C63235;
+    background-color: transparent;
+}
+.personal-tabs--active{
+    background-color: #C63235;
+    color: #fff;
+}
+.entry__text {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.4rem;
+    color: #BDBDBD;
+    text-align: center;
+}
+.entry__btn,
+.garage__block-btn,
+.garage__button {
+    margin-bottom: 10rem;
+    width: 26rem;
+    height: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    line-height: 6rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    background-color: #C63235;
+}

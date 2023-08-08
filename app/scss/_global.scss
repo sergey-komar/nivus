@@ -41,12 +41,22 @@ button{
     color: $grey;
 }
 .button{
+	display: block;
 	color: #fff;
 	background-color: $red;
 	border-radius: 10px;
 	text-align: center;
 	font-weight: 600;
 	border: none;
+}
+.button.disabled{
+	display: block;
+	color: $red;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 600;
+	border: none;
+	background: transparent;
 }
 .home__box{
 	display: flex;

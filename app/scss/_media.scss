@@ -254,9 +254,165 @@
         column-gap: .7rem;
         overflow-x: auto;
     }
+    .stock-accardion__block-title,
+    .stock-accardion__content{
+        font-size: 18px;
+    }
+    .stock-accardion__block-text,
+    .stock-accardion__list-item{
+        font-size: 14px;
+    }
+    .stock-accardion__img {
+       display: none;
+    }
+    .stock-accardion__block{
+        margin-left: 0;
+    }
+    .stock-accardion__btn::after{
+        right: 5px;
+        top: 25px;
+    }
+    .stock-accardion__content{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .nivus__block,
+    .sms__block,
+    .sms-code__block,
+    .entry-form,
+    .information__block,
+    .expect__block,
+    .entrypage-form,
+    .entry-canceled__block,
+    .entry-bonus__block,
+    .garage__block{
+        width: 38rem;
+    }
+    .nivus__title,
+    .sms__title,
+    .sms-code__title,
+    .personal__title,
+    .entry-modal__title,
+    .information__title,
+    .expect__title,
+    .entry-canceled__block-title,
+    .entry-bonus__block-title,
+    .garage__block-title{
+        font-size: 24px;
+    }
+    .nivus__text,
+    .nivus__box-btn,
+    .nivus__item-input,
+    .entry__text,
+    .expect__text,
+    .entry-canceled__block-text,
+    .entry-bonus__block-text,
+    .garage__block-text{
+        font-size: 16px;
+    }
+    .nivus__box-btn{
+        max-width: 16rem;
+        width: 100%;
+    }
+    .nivus__item-input{
+        height: 5rem;
+    }
+    .expect__btn,
+    .sms__btn,
+    .sms-code__btn,
+    .entry-canceled__block-btn,
+    .entry-bonus__block-btn{
+        width: 100%;
+    }
+    .nivus__box-btn{
+        height: 4rem;
+        line-height: 4rem;
+    }
 
-   
+    .nivus__text,
+    .nivus__item{
+        margin-bottom: 1rem;
+    }
+    .sms__input::placeholder{
+        font-size: 14px;
+    }
+    .personal__title{
+        padding-top: 2rem;
+    }
+    .personal-tabs__item-btn{
+        font-size: 14px;
+        width: auto;
+        height: 3rem;
+    }
+    .entry-form__close{
+        right: 22px;
+        top: 12px;
+    }
+    .entry-modal__checkbox{
+        width: 2rem;
+        height: 2rem;
+    }
+    .entry-modal__label{
+        padding: 1.5rem;
+    }
+    .entry-modal__btn{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    .expect__text{
+        margin-bottom: 3rem;
+    }
+    .expect__img img{
+        width: 50px;
+    }
+    .expect__img{
+        margin-bottom: 3rem;
+    }
+    .expect__block{
+        padding: 4rem;
+    }
+    .entrypage-form__map img{
+        height: 16rem;
+    }
+    .entry-canceled__block{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .entry-canceled__block-text{
+        margin-bottom: 5rem;
+    }
+    .entry-canceled__img img{
+        width: 50px;
+    }
+    .entry-canceled__img{
+        margin-bottom: 3rem;
+    }
+    .entry-canceled__block-title{
+        margin-top: 3rem;
+    }
+    .garage__block-subtitle{
+        font-size: 2rem;
+    }
+    .garage__block__box{
+        width: 4rem;
+        height: 6rem;
+    }
+    .garage__block__box input::placeholder{
+        font-size: 1.4rem;
+    }
+    .entry-page__block-marka::placeholder{
+        font-size: 16px;
+    }
+    .garage__block__inner{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .garage__block-text{
+        margin-bottom: 3rem;
+    }
 }
+
+
 
 @media(max-width: 550px){
     html{
